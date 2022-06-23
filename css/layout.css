@@ -24,6 +24,7 @@
   --margin-bottom-lg: 3.2rem;
 
   --section-spacing: 4rem 0 2.5rem;
+   --container-spacing: 0.2.4rem
 
   --gap-sm: 1.5rem;
   --gap-md: 2rem;
@@ -53,7 +54,7 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size-md);
 
-  background-color: var(--clr-dark);
+  background-color: var(--accent-green-clr);
 
   line-height: 3.2rem;
 }
@@ -80,7 +81,7 @@ img {
 .container {
   max-width: 144rem;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: var(--container-spacing);
 }
 
 .d-grid {
@@ -124,11 +125,45 @@ img {
   align-items: center;
   justify-content: space-between;
   background-color: inherit;
+  font-family: var(--font-family);
+ font-size: var(--font-size-sm);
+ 
+}
+.btn-scroll-down{
+  font-size: var(--font-size-sm);
+  color: var(--light-clr);
 }
 
+.nav li a:hover,
+.nav li a:active {
+  color: var(--accent-yellow-clr);
+}
+
+.nav li a.active::after,
+.nav li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 0.125rem;
+  background: var(--accent-yellow-clr);
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+.fa-person-hiking{
+  color: var(--accent-green-clr);
+  
+
+}
+
+
+
+
 .logo-box {
+  text-transform: uppercase;
   min-width: 10.8rem;
   color: var(--clr-dark);
+  font-size: var(--margin-bottom-md);
 }
 
 .menu-toggle-icon {
@@ -240,7 +275,7 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 6), transparent 77%);
+  /*background-image: linear-gradient(135deg, rgba(0, 0, 0, 6), transparent 77%);*/
   z-index: 50;
 }
 
@@ -274,13 +309,13 @@ img {
 }
 
 .main-title {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-md);
 }
 
 .btn {
   display: inline-flex;
   align-items: center;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-sm);
   font-weight: bold;
   gap: 1rem;
 }
@@ -299,7 +334,7 @@ img {
 
 .hiking-information {
   position: relative;
-  margin-top: -12rem;
+  margin-top: 65rem;
   z-index: 500;
 }
 
@@ -323,11 +358,13 @@ img {
 .card-image {
   width: 100%;
   height: 80%;
+  
   object-fit: cover;
 }
 
 .card-image.frame-position-center {
   object-position: 50% 100%;
+  
 }
 
 .card-description {
@@ -340,7 +377,8 @@ img {
 .card-desc {
   color: var(--light-clr);
   margin-left: -14rem;
-  text-align: center;
+  margin-left: 1rem;
+  text-align: start;
   margin-bottom: var(--margin-bottom-md);
 }
 
@@ -349,7 +387,26 @@ img {
   font-size: var(--font-size-sm);
   color: var(--accent-yellow-clr);
 }
+.wrap{
+  margin-bottom: var(--margin-bottom-lg);
+}
+.hiking-information a > #my-button {
+  font-family: var(--font-family);
+  color: var(--clr-dark);
+  font-size: var(--font-size-sm);
+  background-color: var(--accent-yellow-clr);
+  border: 0px;
+  padding: 16px 25px;
+  font-weight: 800;
+}
 
+.hiking-information a > #my-button:hover {
+  color: var(--light-clr) !important;
+  background: var(--dark-light-clr);
+  
+}
+
+/*
 .cta {
   font-size: 22px;
   text-transform: uppercase;
@@ -429,7 +486,7 @@ img {
     height: 300px;
     opacity: 0;
   }
-}
+}*/
 .newsletter {
   display: flex;
   flex-wrap: wrap;
@@ -524,11 +581,21 @@ img {
   padding-top: 4rem 0 5rem;
 }
 
+.logo-box2{
+  text-transform: uppercase;
+  color: var(--clr-dark);
+  margin-top: 5rem;
+}
+
+.person-hiking{
+  margin-top: 5rem;
+ color: var(--clr-dark);
+}
 .footer-container {
   row-gap: 3.2rem;
 }
 
-.brand-information {
+.brand-information> *{
   margin-bottom: var(--margin-bottom-md);
 }
 
@@ -568,4 +635,521 @@ img {
 .footer-nav {
   order: 0;
   gap: var(--margin-bottom-sm);
+}
+
+.horizontal-line {
+  margin-block: 3rem;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.legal-information a{
+  
+  color: var(--light-clr);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  margin: 0 1.5rem;
+  transition: color 0.5s;
+}
+
+.legal-information a:hover,
+.legal-information a:focus {
+  color: var(--accent-yellow-clr);
+}
+
+
+.horizontal{
+  background-color: var(--accent-yellow-clr);
+  margin-bottom: var(--margin-bottom-md);
+  color: var(--accent-yellow-clr);
+}
+
+@media screen and (min-width: 280px){
+  .logo-box {
+    font-size: var(--font-size-sm);
+    margin-left: 2rem;
+}
+.menu-toggle-icon {
+    width: 4rem;
+    font-size: var(--font-size-md);
+    }
+    .hero-data {
+    padding-top: 22rem;
+}
+.newsletter-post_data .text-bok {
+    width: 135px;
+    transition: 0.5s;
+    justify-content: start;
+}
+.newsletter-post_img {
+    min-width: -7rem;
+}
+
+.newsletter-post_img {
+    min-width: -13rem;
+    max-width: 6rem;
+    height: 30;
+    transform: translateX(-8rem);
+    position: relative;
+}
+
+.newsletter-post_data .myButton {
+  padding: 0 18px;
+  margin-left: 0px;
+}
+#email {
+  margin-right: 1rem;
+  align-items: center;
+}
+
+.wrap {
+  margin-left: 10rem;
+}
+
+.newsletter-post {
+    padding: 2rem;
+}
+.news_text h2{
+  font-size: var(--font-size-sm);
+}
+.news_text{
+  font-size: var(--font-size-sm);
+}
+.logo-box2 {
+  font-size: var(--margin-sm);
+    text-transform: uppercase;
+    color: var(--clr-dark);
+    margin-top: -1rem;
+}
+
+.hero-data {
+    padding-top: 22rem;
+}
+
+
+/*footer*/
+.footer-container{
+  grid-template-columns: .75fr 1fr;
+       column-gap: -33.6rem;
+}
+.brand-information{
+  order: 0;
+  max-width: 30rem;
+}
+.footer-nav{
+  margin-bottom: var(--margin-bottom-sm);
+  order: 1;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 6.4rem;
+}
+
+.footer-nav-title{
+  margin-top: var(--margin-bottom-sm);
+}
+.nav-link:last-child{
+  margin-bottom: 0;
+}
+
+.copyright{
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+}
+
+@media screen and (min-width: 360px){
+
+    .logo-box {
+    margin-left: 5rem;
+  font-size: var(--font-size-sm);
+    
+    
+}
+.menu-toggle-icon {
+    width: 14.5rem;
+    font-size: var(--font-size-md);
+    }
+
+.newsletter-post_data .text-bok {
+    width: 135px;
+    transition: 0.5s;
+    justify-content: start;
+}
+.newsletter-post_img {
+    min-width: 6rem;
+}
+
+.newsletter-post_data .myButton {
+  padding: 0 18px;
+  margin-left: 0px;
+}
+#email {
+  margin-right: 1rem;
+  align-items: center;
+}
+
+.wrap {
+  margin-left: 10rem;
+}
+
+.newsletter-post {
+    padding: 2rem;
+}
+.news_text h2{
+  font-size: var(--font-size-sm);
+}
+.news_text{
+  font-size: var(--font-size-sm);
+}
+.logo-box2 {
+  font-size: var(--margin-sm);
+    text-transform: uppercase;
+    color: var(--clr-dark);
+    margin-top: -1rem;
+}
+
+
+
+
+  /*footer*/
+.footer-container{
+  grid-template-columns: .75fr 1fr;
+       column-gap: -33.6rem;
+}
+.brand-information{
+  order: 0;
+  max-width: 30rem;
+}
+.footer-nav{
+  margin-bottom: var(--margin-bottom-sm);
+  order: 1;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 6.4rem;
+}
+
+.footer-nav-title{
+  margin-top: var(--margin-bottom-sm);
+}
+.nav-link:last-child{
+  margin-bottom: 0;
+}
+
+.copyright{
+  margin-top: auto;
+  margin-bottom: 0;
+}
+}
+
+@media screen and (min-width: 375px){
+  .logo-box {
+    margin-left: 5rem;
+  font-size: var(--font-size-sm);
+    
+    
+}
+.menu-toggle-icon {
+    width: 14.5rem;
+    font-size: var(--font-size-md);
+    
+}
+.newsletter-post_data .text-bok {
+    width: 135px;
+    transition: 0.5s;
+    justify-content: start;
+}
+.newsletter-post_img {
+    min-width: 6rem;
+}
+
+.newsletter-post_data .myButton {
+  padding: 0 18px;
+  margin-left: 0px;
+}
+#email {
+  margin-right: 1rem;
+  align-items: center;
+}
+
+.wrap {
+  margin-left: 10rem;
+}
+
+.newsletter-post {
+    padding: 2rem;
+}
+.news_text h2{
+  font-size: var(--font-size-sm);
+}
+.news_text{
+  font-size: var(--font-size-sm);
+}
+.logo-box2 {
+  font-size: var(--margin-sm);
+    text-transform: uppercase;
+    color: var(--clr-dark);
+    margin-top: -1rem;
+}
+
+.hero-data {
+    padding-top: 22rem;
+}
+/*footer*/
+.footer-container{
+  grid-template-columns: .75fr 1fr;
+       column-gap: -33.6rem;
+}
+.brand-information{
+  order: 0;
+  max-width: 30rem;
+}
+.footer-nav{
+  margin-bottom: var(--margin-bottom-sm);
+  order: 1;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 6.4rem;
+}
+
+.footer-nav-title{
+  margin-top: var(--margin-bottom-sm);
+}
+.nav-link:last-child{
+  margin-bottom: 0;
+}
+
+.copyright{
+  margin-top: auto;
+  margin-bottom: 0;
+}
+}
+@media screen and (min-width: 768px){
+  :root{
+    --font-size-xl: 5.8rem
+    --container-spacing: 0.8rem
+  }
+  /* hero */
+
+  .hero{
+    height: 100vh;
+  }
+  .parallax-img{
+    height: auto;
+  }
+  /* hiking-information*/
+
+  .hiking-information {
+  position: initial;
+  margin-top: 95rem;
+  
+}
+
+  .card{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 6.4rem;
+    margin-bottom: 20rem;
+
+  }
+  .card-image{
+    grid-column: 1/-1;
+    width: 60rem;
+    height: 42rem;
+    justify-self: center;
+  }
+  .card-info{
+  grid-column: 1/-1;
+  margin-left: 8rem;
+
+  }
+  .count{
+   font-size: 20rem;
+   left: -8rem;
+  }
+  .tagline{
+    margin-left: 9.5rem;
+  }
+  .tagline::before{
+  width: 7,2rem;
+  left: -9rem;
+}
+.card-title{
+  font-size: 6.4rem;
+}
+
+/*newsletter-post*/
+
+.newsletter-post {
+    padding: -20rem;
+  
+}
+.newsletter-post_data .text-bok {
+       width: 363px;
+    
+}
+.logo-box {
+    margin-left: 9rem;
+  font-size: var(--font-size-md);
+}
+.menu-toggle-icon {
+    width: 14.5rem;
+    font-size: 5rem;
+}
+.wrap {
+    margin-left: 9rem;
+}
+.newsletter-post_img {
+    min-width: 15rem;
+    max-width: 20rem;
+    height: 30;
+    transform: translateX(-8rem);
+    position: relative;
+}
+/*footer*/
+.footer-container{
+  grid-template-columns: .75fr 1fr;
+   column-gap: 6.4rem;
+}
+
+.brand-information{
+  order: 0;
+  max-width: 30rem;
+}
+.footer-nav{
+  margin-bottom: var(--margin-bottom-md);
+  order: 1;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6.4rem;
+}
+
+.footer-nav-title{
+  margin-top: var(--margin-bottom-lg);
+}
+.nav-link:last-child{
+  margin-bottom: 0;
+}
+
+.copyright{
+  margin-top: auto;
+  margin-bottom: 0;
+}
+}
+  
+@media screen and (min-width: 991px){
+       :root{
+  --font-size-xl: 7.5rem
+}
+/*Header*/
+
+.nav-mobile {
+  background-color: transparent;
+  position: initial;
+  width: initial;
+  padding: initial;
+  z-index: initial;
+  transform: initial;
+  transition: initial;
+}
+.nav-mobile,
+.list{
+  flex-direction: row;
+  gap: 0;
+}
+.nav-link{
+  display: block;
+  font-weight: lighter;
+  padding: 5rem 2.4rem;
+}
+.list-link::after,
+.list-link.current::before {
+  top: initial;
+  right: initial;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1rem;
+}
+.sm-screen-hidden {
+  display: block !important;
+}
+.lg-screen-hidden {
+  display: none;
+}
+.nav.active .nav-mobile {
+  transform: initial;
+}
+.header::before {
+  display: none;
+}
+.account-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1;
+  
+}
+.account-link i {
+  font-weight: 300;
+
+}
+
+.btn,btn i,.nav-link:hover{
+ transition: transform .5s;
+
+}
+
+.ntn:hover,
+.nav-link:hover{
+   color: var(--accent-yellow-clr);
+}
+.btn-scroll-down:hover i{
+  transform: translateY(.5rem);
+}
+.btn-accent:hover i{
+  transform: translateX(.5rem);
+}
+/* hero*/
+.hero-data{
+  /*top: 45%;*/
+  max-width: 67rem;
+  justify-self: center;
+}
+
+/* hiking-information*/
+.hiking-information {
+margin-top: 0;
+padding-top: 87rem;
+}
+
+.card{
+  column-gap: 8.1rem;
+}
+.card-image{
+ grid-column: initial;
+ order: 1;
+ width: 48;
+ height: 68rem;
+ justify-self: end;
+}
+.card-info{
+  grid-column: initial;
+  align-self: center;
+}
+.oder-first{
+  order: 0;
+  justify-self: start;
+}
+/* footer*/
+.footer-container{
+ grid-template-columns: repeat(2, 1fr);
+  column-gap: 0;
+}
+.footer-nav-group{
+  justify-self: end;
+}
+}
+
+@media screen and (min-width: 1068px){
+  /*.hero-data{
+    top: 50%;
+  }*/
+  .count{
+    left: -10rem;
+  }
+
 }
