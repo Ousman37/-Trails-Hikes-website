@@ -315,7 +315,9 @@ img {
 }
 
 .main-title {
-  font-size: var(--font-size-md);
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  letter-spacing: 2px;
 }
 
 .btn {

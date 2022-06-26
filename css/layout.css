@@ -317,34 +317,66 @@ align-items: center;
   background-color: var(--accent-green-clr);
 }
 
+.searchBox {
+  position: absolute;
+  top: 500%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  padding: 30px 50px;
+  transform: translateY(50%);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
 
 .searchBox .inputBx{
 margin: 0 20px;
 
 }
-.searchBox .inputBx .my-white{
+.searchBox .inputBx  .my-white{
 color: var(--accent-yellow-clr);
 
 }
 .searchBox .inputBx p{
 font-size: var(--font-size-md);
 color: var(--accent-green-clr);
-margin-bottom: var(--margin-bottom-md);
+margin-bottom: 10px;
 
 }
 
-.searchBox {
-  position: absolute;
-  top: 500%;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-wrap: wrap;
-background-color: #ffffff;
-padding: 30px 50px;
-transform: translateY(50%);
-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+.searchBox .inputBx input{
+   border: 1px solid var(--dark-light-clr);
+   outline: none;
+   padding: 10px;
+   width: 100%;
+   min-width: 150px;
+   font-size: var(--font-size-sm);
 }
+
+.searchBox .inputBx  input[type="submit"]{
+   outline: none;
+   border: none;
+   background: var(--accent-yellow-clr);
+   color: white;
+   cursor: pointer;
+   font-weight: bold;
+   letter-spacing: 2px;
+   padding: 13px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 .main {
   overflow: hidden;
 }
