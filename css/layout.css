@@ -257,22 +257,25 @@ img {
 .header.active-scroll {
   border-bottom: 1px solid rgb(62, 55, 55);
 }
+
+
+
 /* hero */
 
-.banner {
+.box-container {
   position: relative;
- width: 100%;
- padding: 0 100px;
+ width: 50%;
+ padding: 0 50px;
 }
 
-.banner .bg{
+.box-container .bg{
   position: relative;
 height: 20vh;
 display: flex;
 justify-content: center;
 align-items: center;
-
 }
+
 
 .parallax-img {
   position: absolute;
@@ -355,15 +358,20 @@ margin-bottom: 10px;
    font-size: var(--font-size-sm);
 }
 
-.searchBox .inputBx  input[type="submit"]{
-   outline: none;
-   border: none;
-   background: var(--accent-yellow-clr);
-   color: white;
-   cursor: pointer;
-   font-weight: bold;
-   letter-spacing: 2px;
-   padding: 13px;
+.services .box-container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(16, 1fr));
+gap: 1.5rem;
+
+}
+
+.services .box-container .box img{
+padding: 3rem 2rem;
+text-align: center;
+color: var(--accent-yellow-clr);
+
+
+
 
 }
 
