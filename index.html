@@ -17,7 +17,7 @@
     ></script>
 
     <!-- Import CSS file -->
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
   </head>
   <body>
     <!-- header -->
@@ -46,7 +46,13 @@
               <a href="./contact.html" class="nav-link">Contact us</a>
             </li>
             <li class="list-item">
-              <a href="./about.html" class="nav-link">About us</a>
+              <a href="/about.html" class="nav-link">About us</a>
+            </li>
+
+            <li class="list-item">
+              <a href="/account.html" class="nav-link"
+                ><i class="fa-solid fa-circle-user"></i>Account</a
+              >
             </li>
           </ul>
         </div>
@@ -57,12 +63,6 @@
           <i class="fa-solid fa-bars-staggered"></i>
           <i class="fa-regular fa-x"></i>
         </div>
-        <a
-          href="#"
-          class="nav-link account-link place-items-center sm-screen-hidden"
-        >
-          <i class="fa-solid fa-circle-user"></i>Account
-        </a>
       </nav>
     </header>
 
@@ -80,12 +80,38 @@
             </a>
           </div>
         </div>
-        <img
-          src="./images/Hiking-at.jpg"
-          alt="Group of friends on the top of the mountain"
-          class="parallax-img parallax-img-top"
-          id="sky"
-        />
+        <div class="banner">
+          <div class="bg">
+            <img
+              src="./images/Hiking-at.jpg"
+              alt="Group of friends on the top of the mountain"
+              class="parallax-img parallax-img-top"
+              id="sky"
+            />
+            <div class="content">
+              <h2>Explore the Hikes</h2>
+              <a href="#" class="my-btn">Book Now</a>
+            </div>
+            <div class="searchBox">
+              <div class="inputBx">
+                <p>Enter Location</p>
+                <input type="text" placeholder="Ex: Norway" />
+              </div>
+              <div class="inputBx">
+                <p>form date</p>
+                <input type="date" />
+              </div>
+              <div class="inputBx">
+                <p>End date</p>
+                <input type="date" />
+              </div>
+              <div class="inputBx">
+                <p class="my-white">_</p>
+                <input type="submit" value="Find" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="hiking-information section" id="hiking-information">
         <div class="card-container container">
@@ -355,6 +381,31 @@
           <p class="footer-blurb">
             Get out there discover your next hike slope, mountain & destination!
           </p>
+          <p class="footer-blurb">Follow me on</p>
+          <div class="footer-row">
+            <ul class="wrapper">
+              <li class="icon facebook">
+                <span class="tooltip">Facebook</span>
+                <span><i class="fab fa-facebook-f"></i></span>
+              </li>
+              <li class="icon twitter">
+                <span class="tooltip">Twitter</span>
+                <span><i class="fab fa-twitter"></i></span>
+              </li>
+              <li class="icon instagram">
+                <span class="tooltip">Instagram</span>
+                <span><i class="fab fa-instagram"></i></span>
+              </li>
+              <li class="icon linkedin">
+                <span class="tooltip">Linkedin</span>
+                <span><i class="fab fa-linkedin"></i></span>
+              </li>
+              <li class="icon youtube">
+                <span class="tooltip">Youtube</span>
+                <span><i class="fab fa-youtube"></i></span>
+              </li>
+            </ul>
+          </div>
 
           <span class="copyright"
             >&copy; 2022 TrailsHikes, Inc. All rights reserved.</span

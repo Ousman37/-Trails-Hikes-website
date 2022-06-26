@@ -17,11 +17,10 @@
     ></script>
 
     <!-- Import CSS file -->
-    <link rel="stylesheet" href="./css/newstyles.css" />
+    <link rel="stylesheet" href="/css/onestyle.css" />
   </head>
-  <body>
+  <>
     <!-- header -->
-
     <header class="header" id="header">
       <nav class="nav container" id="nav">
         <a href="./index.html" class="logo-box">
@@ -41,7 +40,6 @@
             <li class="list-item">
               <a href="./package.html" class="nav-link">Packages</a>
             </li>
-
             <li class="list-item">
               <a href="./contact.html" class="nav-link">Contact us</a>
             </li>
@@ -49,10 +47,10 @@
               <a href="/about.html" class="nav-link">About us</a>
             </li>
             <li class="list-item">
-            <a href="/account.html" class="nav-link"
-             ><i class="fa-solid fa-circle-user"></i>Account</a
-             >
-           </li>
+              <a href="/account.html" class="nav-link"
+                ><i class="fa-solid fa-circle-user"></i>Account</a
+              >
+            </li>
           </ul>
         </div>
         <div
@@ -70,7 +68,7 @@
       <section class="hero">
         <div class="hero-container container d-grid">
           <div class="hero-data" id="hero-data">
-            <span class="tagline">Contact Us</span>
+            <span class="tagline">Fulfil your wanderlust</span>
             <h1 class="title main-title">
               Be prepared for hiking in Mountains and beyond!
             </h1>
@@ -85,45 +83,86 @@
           class="parallax-img parallax-img-top"
           id="sky"
         />
-            </section>
-            <section class="hiking-information section" id="hiking-information">
-            <div class="card-container container" id="form-details">
-      
-        
-            <form id="contactForm">
-            <h2 class="my-title card-title">We love to hear from you</h2>
-            
-            
-             <div class="card-info">
-             <span class="tagline">LEAVE A MESSAGE</span>
-    
-           </div>
+      </section>
+      <section class="hiking-information section" id="hiking-information">
+        <div class="card-container container">
+          <div class="card d-grid">
+            <div class="card-info">
+              <span class="count">01</span>
+              <span class="tagline"
+                ><i class="fa-solid fa-user-check"></i>Welcome back
+              </span>
+              <h2 class="title card-title">We are happy to see you here!</h2>
+              <p class="card-description">Thank you for being with us!</p>
 
-             <label for="" id="search_bar" >First name</label>
-               <input type="text" aria-labelledby="name" id="firstName" class="search-input" placeholder="Your first  name" />
-                      <div class="error-hint hidden" id="firstNameError">We need your first name – it’s nicer that way</div>
-              <label for="" id="name" >Last  name</label>
-              <input type="text" aria-labelledby="name" id="lastName" class="search-input" placeholder="Your  last name" />
-               <div class="error-hint hidden" id="lastNameError">Last name, too, please!</div>       
-                 <label for="" id="name" >Email</label>
-                <input type="text" aria-labelledby="email" id="email" class="search-input" placeholder="your email address " />
-              <div class="error-hint hidden" id="emailError_contact_form">Oops! You need to type your email here</div>
-             
-                
-              <label for="" id="name" >Message</label>
-               <textarea name="message"  aria-labelledby="message"  id="message" cols="30" rows="10"  placeholder="your message "></textarea>
-                 <div class="error-hint hidden" id="messageError">
-               your message is required.</div>  
-              
-              
-              <hr />
-          <div class="wrap">
-          <button  class="submit-button" type="submit">Submit here</button>
-          </div>  
-          </form>
-          
+              <a href="#" class="btn btn-accent"
+                >Read more <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
           </div>
-            <div class="newsletter-post">
+          <section class="container-row" id="container-column">
+            <div class="form-container sign-up-container">
+              <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                  <a href="#" class="social"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="social"
+                    ><i class="fab fa-google-plus-g"></i
+                  ></a>
+                  <a href="#" class="social"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button class="host-btm">Sign Up</button>
+              </form>
+            </div>
+            <div class="form-container sign-in-container">
+              <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                  <a href="#" class="social"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="social"
+                    ><i class="fab fa-google-plus-g"></i
+                  ></a>
+                  <a href="#" class="social"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button class="host-btm">Sign In</button>
+              </form>
+            </div>
+            <div class="overlay-container">
+              <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                  <h1>Welcome Back!</h1>
+                  <p>
+                    To keep connected with us please login with your personal
+                    info
+                  </p>
+                  <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                  <h1>Hello, Friend!</h1>
+                  <p>Enter your personal details and start journey with us</p>
+                  <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="newsletter-post">
             <div class="newsletter-post_img">
               <img
                 src="./images/Hiking-at.jpg"
@@ -158,7 +197,7 @@
         </div>
       </section>
     </main>
-        <!--footer-->
+    <!--footer-->
     <footer class="footer">
       <div class="footer-container container d-grid">
         <div class="brand-information">
@@ -237,54 +276,6 @@
     <script src="./js/script.js" defer></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

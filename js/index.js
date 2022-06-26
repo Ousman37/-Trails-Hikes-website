@@ -1,17 +1,13 @@
 // Global variables
-const menuToggleIcon = document.getElementById("menu-toggle-icon");
-const navMobile = document.getElementById("nav");
-const headerElement = document.getElementById("header");
-const navL = document.querySelectorAll(".nav-mobile .list-link");
 
-console.log(navL);
+const signUpButton = document.getElementById("signUp");
+const signInButton = document.getElementById("signIn");
+const container = document.getElementById("container-column");
 
-//Toggle navigation
-const toggleMenu = () => {
-  navMobile.classList.toggle("active");
-  headerElement.classList.toggle("active");
-};
+signUpButton.addEventListener("click", () =>
+  container.classList.add("right-panel-active")
+);
 
-menuToggleIcon.addEventListener("click", toggleMenu);
-
-// add / remove header border bottom on scroll
+signInButton.addEventListener("click", () =>
+  container.classList.remove("right-panel-active")
+);
