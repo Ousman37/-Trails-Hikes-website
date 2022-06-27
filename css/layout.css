@@ -321,58 +321,6 @@ align-items: center;
   background-color: var(--accent-green-clr);
 }
 
-/*
-.searchBox {
-  position: absolute;
-  top: 500%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: #ffffff;
-  padding: 30px 50px;
-  transform: translateY(50%);
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-}
-
-
-.searchBox .inputBx{
-margin: 0 20px;
-
-}
-.searchBox .inputBx  .my-white{
-color: var(--accent-yellow-clr);
-
-}
-.searchBox .inputBx p{
-font-size: var(--font-size-md);
-color: var(--accent-green-clr);
-margin-bottom: 10px;
-
-}
-
-.searchBox .inputBx input{
-   border: 1px solid var(--dark-light-clr);
-   outline: none;
-   padding: 10px;
-   width: 100%;
-   min-width: 150px;
-   font-size: var(--font-size-sm);
-}
-
-.services .box-container{
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(16, 1fr));
-gap: 1.5rem;
-
-}
-
-.services .box-container .box img{
-padding: 3rem 2rem;
-text-align: center;
-color: var(--accent-yellow-clr);
-
-}*/
 
 
 
@@ -498,9 +446,9 @@ color: var(--accent-yellow-clr);
 }
 .hiking-information a > #my-button {
   font-family: var(--font-family);
-  color: var(--clr-dark);
+  color: #2E2E2E;
   font-size: var(--font-size-sm);
-  background-color: var(--accent-yellow-clr);
+  background-color: #FBD041;
   border: 0px;
   padding: 16px 25px;
   font-weight: 800;
