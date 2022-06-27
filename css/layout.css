@@ -588,12 +588,13 @@ color: var(--accent-yellow-clr);
 }
 
 .newsletter-post_data .myButton {
-  background-color: var(--accent-yellow-clr);
-  color: var(--light-clr);
+  background-color: #695102;
+  color: #2E2E2E;
   padding: 0 10px;
   text-transform: uppercase;
   cursor: pointer;
   margin-left: 3px;
+  font-family: 400;
 }
 
 .list-item {
