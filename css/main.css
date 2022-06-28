@@ -426,94 +426,6 @@ line-height: 2;
 
 
 /**------ Destination ----*/
-/*
-.destination .box-container{
-
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-column: (minmax(27rem, 1fr))[auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-  gap: 1.5rem;
-
-
-  /*display: -ms-grid;
-  display: grid;
-  -ms-grid-template-column: (minmax(27rem, 1fr)) auto[auto-fit];
-  grid-template-columns: repeat(auto-fit, min-max(27rem, 1fr));
-  gap: 1.5rem;
-
-}
-.destination .box-container .box{
-    background: #fff;
-    border-radius: 1rem;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: rgba(17, 17 ,17 / 15%)0px 0.5rem 1rem;
-
-}
-
-.destination .box-container .box:hover img{
-   -webkit-transform: scale(1.1);
-   transform: scale(1.1);
-  
-}
-
-.destination .box-container .box .image{
-  height: 333PX;
-   width: 348PX;
-  
-   overflow: hidden;
-   
-  
-}
-
-.destination .box-container .box .image img{
-  height: 333PX;
- width: 348PX;
-  border-radius: 12PX;
-  -o-object-fit: cover;
-  object-fit: cover;
-
-}
-
-
-.destination .box-container .box .card_description {
-  padding: 1rem 0;
-  font-size: var(--font-size-sm);
-  font-weight: 300;
-  color: #3d3d3d;
-  line-height: 2;
-
-}
-.destination .box-container .box .description {
-  font-size: var(--font-size-md);
-  color: #fdd037;
-}
-
-.destination .box-container .box  .my-Button {
-  background-color: var(--accent-yellow-clr);
-width: 20%;
-padding: 1.2rem 1.4rem;
-border-radius: 5rem;
-border: 0.2rem solid #fdd037;
-font-size: 1.6rem;
-text-transform: capitalize;
-background: none;
-margin-top: 1rem;
--ms-flex: 1 1 15rem;
-  flex: 1 1 15rem;
-  cursor: pointer;
-  color: #2E2E2E;
-  
-  
-}
-
-.destination .box-container .box .my-Button:hover {
-  background-color: var(--accent-yellow-clr);
-  width: 20%;
-  color: #2E2E2E;
-  
-}*/
 
 .container {
   max-width: 1880px;
@@ -652,36 +564,6 @@ object-fit: cover;
 }
 
 
-
-
-
-
-
-
-/* book 2 */
-/*.banner {
-  position: relative;
- width: 100%;
- padding: 0 100px;
-}
-
-
-.banner .bg{
-  position: relative;
-height: 20vh;
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-
-
-
-
-
-
-
-
 .parallax-img {
   position: absolute;
   left: 0;
@@ -773,7 +655,7 @@ margin-bottom: 10px;
    letter-spacing: 2px;
    padding: 13px;
 
-}*/
+}
 
 /* book 2  end here */
 
@@ -880,7 +762,6 @@ margin-bottom: 10px;
   
 }*/
 
-
 .newsletter {
   display: flex;
   flex-wrap: wrap;
@@ -894,7 +775,7 @@ margin-bottom: 10px;
   max-width: 98rem;
   padding: 5rem;
   background-color: var(--accent-green-clr);
-  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 2);
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 8);
   display: flex;
   align-items: center;
   border-radius: 0.8rem;
@@ -957,18 +838,18 @@ margin-bottom: 10px;
 }
 
 .newsletter-post_data .myButton {
-  background-color: #695102;
+  background-color: #FBD041;
   color: #2E2E2E;
   padding: 0 10px;
   text-transform: uppercase;
   cursor: pointer;
   margin-left: 3px;
+  font-family: 400;
 }
 
 .list-item {
   color: var(--light-clr);
 }
-
 
 
 /* !Social media icons*/
@@ -1621,45 +1502,6 @@ margin-bottom: 10px;
   margin-top: 95rem;
   
 }
-/*
-.card {
-    flex-basis: 50%;
-  }
-  .title {
-    font-size: 30px;
-}
-
-  .card{
-    grid-template-columns: repeat(2,1fr);
-    row-gap: 6.4rem;
-    margin-bottom: -1rem;
-
-  }
-  .card-image{
-    grid-column: 1/-1;
-    width: 60rem;
-    height: 42rem;
-    justify-self: center;
-  }
-  .card-info{
-  grid-column: 1/-1;
-  margin-left: 8rem;
-
-  }
-  .count{
-   font-size: 20rem;
-   left: -8rem;
-  }
-  .tagline{
-    margin-left: 9.5rem;
-  }
-  .tagline::before{
-  width: 7,2rem;
-  left: -9rem;
-}
-.card-title{
-  font-size: 6.4rem;
-}*/
 
 /*newsletter-post*/
 
@@ -1671,11 +1513,9 @@ margin-bottom: 10px;
        width: 363px;
     
 }
-/*
-.logo-box {
-    margin-left: 9rem;
-  font-size: var(--font-size-md);
-}*/
+
+
+
 .menu-toggle-icon {
     width: 14.5rem;
     font-size: 5rem;
@@ -1684,7 +1524,7 @@ margin-bottom: 10px;
     margin-left: 9rem;
 }
 .newsletter-post_img {
-    min-width: 15rem;
+    min-width: 21rem;
     max-width: 20rem;
     height: 30;
     transform: translateX(-8rem);
@@ -1817,13 +1657,6 @@ margin-bottom: 10px;
 margin-top: 0;
 padding-top: 161rem;
 }
-/*
-.card {
-    flex-basis: 50%;
-  }
-  .title {
-    font-size: 30px;
-}*/
 
  /* Popular Destination*/
 .container {
@@ -1880,15 +1713,28 @@ padding-top: 161rem;
 .footer-nav-group{
   justify-self: end;
 }
+.newsletter-post_img {
+    min-width: 20rem;
+    max-width: 20rem;
+    height: 30;
+    transform: translateX(-8rem);
+    position: relative;
+}
 }
 
 @media screen and (min-width: 1068px){
-  /*.hero-data{
-    top: 50%;
-  }*/
-  .count{
-    left: -10rem;
-  }
+ 
+ 
+ 
+  .newsletter-post_img {
+    min-width: 20rem;
+    max-width: 20rem;
+    height: 30;
+    transform: translateX(-8rem);
+    position: relative;
+}
+  
+  
  /* Popular Destination*/
 
 .container {
