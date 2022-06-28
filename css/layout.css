@@ -948,7 +948,7 @@ align-items: center;
   height: 30%;
   object-fit: cover;
   object-position: 30% 50%;
-  top: 55%;
+  top: 54%;
   z-index: 110;
 }
 
@@ -1067,7 +1067,7 @@ align-items: center;
   /* hero */
 
   .hero{
-    height: 100vh;
+    height: 75vh;
   }
   .parallax-img{
     height: auto;
@@ -1258,7 +1258,7 @@ align-items: center;
 /* hiking-information*/
 .hiking-information {
 margin-top: 0;
-padding-top: 87rem;
+padding-top: 161rem;
 }
 
 .card{
