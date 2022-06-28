@@ -1081,15 +1081,34 @@ img {
 }
 }
 
+@media screen and (min-width: 412px){
+.container-row {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+  position: relative;
+  overflow: hidden;
+  width: 702px;
+  max-width: 58%;
+  min-height: 554px;
+  margin-bottom: var(--margin-bottom-lg);
+}
+.form-container input {
+  background: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 186%;
+}
+}
+
+
 @media screen and (min-width: 375px){
   .logo-box {
     margin-left: 5rem;
   font-size: var(--font-size-sm);
     
 }
-
-
-
 
 .menu-toggle-icon {
     width: 14.5rem;
