@@ -10,6 +10,10 @@
     <title>Trails Hikes | Destinations</title>
 
     <!-- font awesome link -->
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQReN-gGhPMWiUyGSizddMhHlbBvDygxs=initMap"
+    ></script>
 
     <script
       src="https://kit.fontawesome.com/03d5a1f99a.js"
@@ -113,12 +117,15 @@
         </div>
       </section>
       <!------ Book ends-------->
-
+      <section id="mapJava">
+        <h2 class="title">Search location Wish</h2>
+        <div id="map"></div>
+      </section>
       <!------ destination start -------->
       <section>
         <div class="wrapper">
           <div class="container">
-            <h1 class="title">Popular destination</h1>
+            <h2 class="title">Popular destination</h2>
             <div class="inner-wrapper">
               <div class="card">
                 <div class="inner-card">
@@ -637,6 +644,7 @@
     <!-- <script src="https://unpkg.com/scrollreveal"></script>-->
 
     <!-- !Custom js file  -->
-    <script src="./js/script.js" defer></script>
+    <script src="./js/map.js" defer></script>
+    <!--  <script src="./js/script.js" defer></script>-->
   </body>
 </html>

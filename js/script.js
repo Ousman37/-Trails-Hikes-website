@@ -119,7 +119,7 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError_contact_form");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
-console.log(form);
+//console.log(form);
 function validateForm3(event) {
   event.preventDefault();
 

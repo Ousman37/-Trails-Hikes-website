@@ -657,7 +657,13 @@ margin-bottom: 10px;
 
 }
 
-/* book 2  end here */
+/* map  */
+
+ #map {
+    height: 700px;
+    width: 100%;
+  }
+
 
 
 .main-title {
