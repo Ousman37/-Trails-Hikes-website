@@ -53,7 +53,7 @@ html {
 body {
  background: var(--accent-green-clr);
 
-
+ overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,7 +132,7 @@ a {
   width: 100%;
 }
 
-button {
+.host-btm {
     border-radius: 20px;
     border: 1px solid var(--accent-yellow-clr);
     background: var(--accent-yellow-clr);
@@ -145,15 +145,15 @@ button {
     transition: transform 80ms ease-in;
 }
 
-button:active {
+.host-btm:active {
     transform: scale(.95);
 }
 
-button:focus {
+.host-btm:focus {
     outline: none;
 }
 
-button.ghost {
+.ghost {
     background: transparent;
     border-color: #fff;
 }
@@ -1071,7 +1071,7 @@ img {
   height: 37rem;
   object-fit: cover;
   object-position: 30% 50%;
-  top: 35%;
+  top: 69%;
   z-index: 110;
 }
 .container-row {
@@ -1088,8 +1088,8 @@ img {
   width: 186%;
 }
 
-p {
-  font-size: 2rem;
+.card-description{
+  font-size: 1.4rem;
   font-weight: 100;
   line-height: 20px;
   letter-spacing: -0.5px;
@@ -1097,7 +1097,40 @@ p {
 }
 
 button {
-  border-radius: 20px;
+  border-radius: 1px;
+  border: 1px solid var(--accent-yellow-clr);
+  background: var(--accent-yellow-clr);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+   padding: 15px 13px 13px 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.btn {
+  margin-left: 10rem;
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--font-size-sm);
+  font-weight: bold;
+  gap: -2rem;
+}
+.host-btm {
+  border-radius: 1px;
+  border: 1px solid var(--accent-yellow-clr);
+  background: var(--accent-yellow-clr);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 13px 13px 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+.myButton {
+  border-radius: 1px;
   border: 1px solid var(--accent-yellow-clr);
   background: var(--accent-yellow-clr);
   color: #fff;
@@ -1120,7 +1153,7 @@ button {
 }
 
 .newsletter-post {
-  width: 79%;
+  width: 89%;
   max-width: 125rem;
   padding: 16rem;
   background-color: var(--light-clr);
@@ -1146,14 +1179,14 @@ button {
 }
 .tagline {
   display: inline-block;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   margin-left: 23.5rem;
   margin-top: -100rem;
   
 }
 .title {
   font-family: var(--font-family);
-  font-size: 1.9rem;
+  font-size: 1.4rem;
   font-weight: lighter;
   text-align: center;
     margin-top: 7rem;
@@ -1161,8 +1194,8 @@ button {
 }
 .hiking-information {
   position: relative;
-  margin-top: -32rem;
-  z-index: 500;
+  margin-top: -4rem;
+  
 }
 .wrapper {
   display: inline-block;
@@ -1171,9 +1204,9 @@ button {
 }
 
 
-p {
+.card-description{
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   font-weight: 100;
   line-height: 20px;
   letter-spacing: 1px;
@@ -1197,26 +1230,28 @@ p {
   margin-right: 1rem;
   align-items: center;
 }
-
+.newsletter-post_data .email-box {
+  display: flex;
+  height: 33px;
+  justify-content: center;
+}
 .wrap {
   margin-left: 10rem;
 }
 
 .newsletter-post {
-    padding: 2rem;
+    padding: -1rem;
 }
 .news_text h2{
-  font-size: var(--font-size-sm);
+  font-size: 1.3rem;
 }
 .news_text{
   font-size: var(--font-size-sm);
 }
 .logo-box2 {
-  font-size: 2.3rem;
-    text-transform: uppercase;
-    color: var(--clr-dark);
+  font-size: var(--font-size-sm);
     margin-top: -1rem;
-    margin-left: 4rem;
+    margin-left: 2rem;
 }
 
 /*footer*/
@@ -1243,6 +1278,7 @@ p {
 }
 
 .copyright{
+  font-size: 1.3rem;
   text-align: center;
   margin-top: auto;
   margin-bottom: 0;
@@ -1260,7 +1296,7 @@ p {
     height: 100vh;
   }
   .parallax-img{
-    height: auto;
+    height: 80vh;
   }
   /* hiking-information*/
 
@@ -1270,29 +1306,12 @@ p {
   
 }
 
-  .card{
-    grid-template-columns: repeat(2,1fr);
-    row-gap: 6.4rem;
-    margin-bottom: 20rem;
-
-  }
-  .card-image{
-    grid-column: 1/-1;
-    width: 60rem;
-    height: 42rem;
-    justify-self: center;
-  }
-  .card-info{
-  grid-column: 1/-1;
-  margin-left: 8rem;
-
-  }
   .count{
    font-size: 20rem;
    left: -8rem;
   }
   .tagline{
-    margin-left: 9.5rem;
+    margin-left: 37.5rem;
   }
   .tagline::before{
   width: 7,2rem;
@@ -1315,6 +1334,114 @@ p {
 
 .menu-toggle-icon {
     width: 14.5rem;
+    font-size: 5rem;
+}
+.wrap {
+    margin-left: 9rem;
+}
+.newsletter-post_img {
+    min-width: 15rem;
+    max-width: 20rem;
+    height: 30;
+    transform: translateX(-8rem);
+    position: relative;
+}
+
+
+
+
+/*footer*/
+.footer-container{
+  grid-template-columns: .75fr 1fr;
+   column-gap: 6.4rem;
+}
+
+.brand-information{
+  order: 0;
+  max-width: 30rem;
+}
+.footer-nav{
+  margin-bottom: var(--margin-bottom-md);
+  order: 1;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6.4rem;
+}
+
+.footer-nav-title{
+  margin-top: var(--margin-bottom-lg);
+}
+.nav-link:last-child{
+  margin-bottom: 0;
+}
+
+.copyright{
+  margin-top: auto;
+  margin-bottom: 0;
+}
+}
+ 
+@media screen and (min-width: 800px){
+  :root{
+    --font-size-xl: 5.8rem
+    --container-spacing: 0.8rem
+  }
+
+  /* hero */
+
+  .hero{
+    height: 81vh;
+  }
+
+
+  .parallax-img{
+    height: 40vh;
+    width: 100%;
+  }
+  /* hiking-information*/
+
+  .hiking-information {
+  position: initial;
+  margin-top: 37rem;
+  
+}
+
+  .count{
+   font-size: 20rem;
+   left: -8rem;
+  }
+  .tagline{
+    margin-left: 37.5rem;
+  }
+  .tagline::before{
+  width: 7,2rem;
+  left: -9rem;
+}
+.card-title{
+  font-size: 4.4rem;
+}
+.btn {
+  margin-left: 40rem;
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--font-size-sm);
+  font-weight: bold;
+  gap: -2rem;
+}
+
+/*newsletter-post*/
+
+.newsletter-post {
+    padding: -20rem;
+  
+}
+.newsletter-post_data .text-bok {
+       width: 363px;
+    
+}
+
+.menu-toggle-icon {
+  margin-right: -10rem;
+    width: 32.5rem;
     font-size: 5rem;
 }
 .wrap {
@@ -1356,14 +1483,12 @@ p {
   margin-bottom: 0;
 }
 }
-  
+
+
 @media screen and (min-width: 991px){
        :root{
   --font-size-xl: 7.5rem
 }
-
-
-
 
 
 /*Header*/
@@ -1443,7 +1568,7 @@ p {
 /* hiking-information*/
 .hiking-information {
 margin-top: 0;
-padding-top: 87rem;
+padding-top: 72rem;
 }
 
 .card{
