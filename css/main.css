@@ -673,6 +673,12 @@ width:100%;
 position:absolute;
 }
 
+.card-description{
+  color: white;
+}
+
+
+
 
 
 
@@ -723,6 +729,7 @@ position:absolute;
   position: relative;
 }
 #email {
+  color: var(--light-clr);
   font-size: var(--font-size-sm);
   margin-right: 2rem;
   align-items: center;
