@@ -1085,6 +1085,11 @@ font-size: var(--font-size-sm);
   align-items: center;
   border-radius: 0.8rem;
 }
+.wrapper {
+  display: inline-block;
+  list-style: none;
+  font-family: var(--font-family);
+}
 }
 
 @media screen and (min-width: 360px){
