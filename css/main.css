@@ -235,7 +235,7 @@ color: #0b1d26;
   transform: translateY(8rem);
 }
 
-.nav.active .fa-bars-staggered {
+.nav.active .fa-bars {
   display: none;
 }
 

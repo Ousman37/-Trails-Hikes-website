@@ -122,6 +122,10 @@ img {
   z-index: 999;
 }
 
+.nav li a{
+color: #0b1d26;
+
+}
 .nav {
   height: 8rem;
   display: flex;

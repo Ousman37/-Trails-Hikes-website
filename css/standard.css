@@ -117,6 +117,10 @@ img {
   z-index: 999;
 }
 
+.nav li a{
+color: #0b1d26;
+
+}
 .nav {
   height: 8rem;
   display: flex;
@@ -124,7 +128,7 @@ img {
   justify-content: space-between;
   background-color: inherit;
   font-family: var(--font-family);
- font-size: var(--font-size-sm);
+ font-size: var(--font-size-lg);
  
 }
 .btn-scroll-down{
@@ -235,7 +239,7 @@ img {
   transform: translateY(8rem);
 }
 
-.nav.active .fa-bars-staggered {
+.nav.active .fa-bars{
   display: none;
 }
 
