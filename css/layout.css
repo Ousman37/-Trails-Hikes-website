@@ -108,7 +108,10 @@ img {
 .sm-screen-hidden {
   display: none !important;
 }
+.nav li a{
+color: #0b1d26;
 
+}
 /* header */
 
 .header {
@@ -1287,6 +1290,11 @@ padding-top: 161rem;
 .footer-nav-group{
   justify-self: end;
 }
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  font-family: var(--font-family);
+}
 }
 
 @media screen and (min-width: 1068px){
@@ -1296,5 +1304,10 @@ padding-top: 161rem;
   .count{
     left: -10rem;
   }
+  .wrapper {
+  display: inline-flex;
+  list-style: none;
+  font-family: var(--font-family);
+}
 
 }

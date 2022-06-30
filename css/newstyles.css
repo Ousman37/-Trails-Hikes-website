@@ -71,7 +71,10 @@ a {
 li {
   font-size: var(--font-size-sm);
 }
+.nav li a{
+color: #0b1d26;
 
+}
 img {
   max-width: 100%;
   height: auto;
@@ -1112,7 +1115,7 @@ label {
 }
 
 .hero-data {
-    padding-top: 22rem;
+    padding-top: 11rem;
 }
 /*footer*/
 .footer-container{
@@ -1343,6 +1346,9 @@ padding-top: 87rem;
 .footer-nav-group{
   justify-self: end;
 }
+.newsletter-post {
+  padding: 11rem;
+}
 }
 
 @media screen and (min-width: 1068px){
@@ -1352,5 +1358,7 @@ padding-top: 87rem;
   .count{
     left: -10rem;
   }
-
+.newsletter-post {
+  padding: 11rem;
+}
 }

@@ -156,7 +156,10 @@ img {
   
 }
 
+.nav li a{
+color: #0b1d26;
 
+}
 
 .logo-box {
   text-transform: uppercase;
@@ -1199,6 +1202,9 @@ padding-top: 87rem;
 .footer-nav-group{
   justify-self: end;
 }
+.newsletter-post {
+  padding: 11rem;
+}
 }
 
 @media screen and (min-width: 1068px){
@@ -1208,5 +1214,8 @@ padding-top: 87rem;
   .count{
     left: -10rem;
   }
+  .newsletter-post {
+  padding: 11rem;
+}
 
 }
