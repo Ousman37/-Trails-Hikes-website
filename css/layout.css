@@ -764,7 +764,7 @@ align-items: center;
     font-size: var(--font-size-md);
     }
     .hero-data {
-    padding-top: 22rem;
+    padding-top: 30rem;
 }
 .newsletter-post_data .text-bok {
     width: 135px;
@@ -814,6 +814,17 @@ align-items: center;
 
 .hero-data {
     padding-top: 22rem;
+}
+
+.parallax-img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 11%;
+  object-fit: cover;
+  object-position: 30% 50%;
+  top: 55%;
+  z-index: 110;
 }
 
 /*footer*/
@@ -896,7 +907,22 @@ align-items: center;
     color: var(--clr-dark);
     margin-top: -1rem;
 }
+.parallax-img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 11%;
+  object-fit: cover;
+  object-position: 30% 50%;
+  top: 55%;
+  z-index: 110;
+}
 
+.hiking-information {
+  position: relative;
+  margin-top: -48rem;
+  z-index: 500;
+}
 
   /*footer*/
 .footer-container{
@@ -924,6 +950,11 @@ align-items: center;
 .copyright{
   margin-top: auto;
   margin-bottom: 0;
+}
+.wrapper {
+  display: inline-block;
+  list-style: none;
+  font-family: var(--font-family);
 }
 }
 
@@ -1006,6 +1037,11 @@ align-items: center;
 .hero-data {
     padding-top: 22rem;
 }
+.hiking-information {
+  position: relative;
+  margin-top: 2rem;
+  z-index: 500;
+}
 /*footer*/
 
 .footer-row {
@@ -1059,6 +1095,11 @@ align-items: center;
   transition: 0.5s;
   justify-content: start;
 }
+.hiking-information {
+  position: relative;
+  margin-top: -4rem;
+  z-index: 500;
+}
 
 }
 @media screen and (min-width: 768px){
@@ -1079,7 +1120,7 @@ align-items: center;
 
   .hiking-information {
   position: initial;
-  margin-top: 95rem;
+  margin-top: 41rem;
   
 }
 
@@ -1261,7 +1302,7 @@ align-items: center;
 /* hiking-information*/
 .hiking-information {
 margin-top: 0;
-padding-top: 161rem;
+padding-top: 89rem;
 }
 
 .card{
@@ -1308,6 +1349,12 @@ padding-top: 161rem;
   display: inline-flex;
   list-style: none;
   font-family: var(--font-family);
+}
+
+/* hiking-information*/
+.hiking-information {
+margin-top: 0;
+padding-top: 120rem;
 }
 
 }
