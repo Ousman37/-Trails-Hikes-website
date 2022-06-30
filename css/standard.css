@@ -704,6 +704,9 @@ img {
   color: var(--accent-yellow-clr);
 }
 
+/* !Media queries */
+
+
 @media screen and (min-width: 280px){
   .logo-box {
     font-size: var(--font-size-sm);
@@ -794,101 +797,39 @@ img {
   margin-top: auto;
   margin-bottom: 0;
 }
-
+.wrapper {
+  display: inline-block;
+  list-style: none;
+  font-family: var(--font-family);
 }
 
+}
 @media screen and (min-width: 360px){
-
-    .logo-box {
-    margin-left: 5rem;
-  font-size: var(--font-size-sm);
-  
-}
-
-.search-input {
-    display: none;
-}
-
-.menu-toggle-icon {
-    width: 14.5rem;
-    font-size: var(--font-size-md);
-    }
-
-.newsletter-post_data .text-bok {
-    width: 135px;
-    transition: 0.5s;
-    justify-content: start;
-}
-.newsletter-post_img {
-    min-width: 6rem;
-}
-
-.newsletter-post_data .myButton {
-  padding: 0 18px;
-  margin-left: 0px;
-}
-#email {
-  margin-right: 1rem;
-  align-items: center;
-}
-
-.wrap {
-  margin-left: 10rem;
-}
-
-.newsletter-post {
-    padding: 2rem;
-}
-.news_text h2{
-  font-size: var(--font-size-sm);
-}
-.news_text{
-  font-size: var(--font-size-sm);
-}
-.logo-box2 {
-  font-size: var(--margin-sm);
-    text-transform: uppercase;
-    color: var(--clr-dark);
-    margin-top: -1rem;
-}
-
-
-
-
-  /*footer*/
-.footer-container{
-  grid-template-columns: .75fr 1fr;
-       column-gap: -33.6rem;
-}
-.brand-information{
-  order: 0;
-  max-width: 30rem;
-}
-.footer-nav{
-  margin-bottom: var(--margin-bottom-sm);
-  order: 1;
-  grid-template-columns: repeat(1, 1fr);
-  column-gap: 6.4rem;
-}
-
-.footer-nav-title{
-  margin-top: var(--margin-bottom-sm);
-}
-.nav-link:last-child{
-  margin-bottom: 0;
-}
-
-.copyright{
-  margin-top: auto;
-  margin-bottom: 0;
-}
-}
-
-@media screen and (min-width: 375px){
   .logo-box {
     margin-left: 5rem;
   font-size: var(--font-size-sm);
   
+}
+
+.parallax-img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+  object-position: 30% 50%;
+  top: 67%;
+  z-index: 110;
+}
+.hiking-information {
+  position: relative;
+  margin-top: 1rem;
+  z-index: 500;
+}
+
+.hero {
+  position: relative;
+  height: 98rem;
 }
 
 .search-input {
@@ -938,7 +879,7 @@ img {
 }
 
 .hero-data {
-    padding-top: 22rem;
+    padding-top: 12rem;
 }
 /*footer*/
 .footer-container{
@@ -966,6 +907,122 @@ img {
 .copyright{
   margin-top: auto;
   margin-bottom: 0;
+}
+.wrapper {
+  display: inline-block;
+  list-style: none;
+  font-family: var(--font-family);
+}
+}
+
+@media screen and (min-width: 375px){
+  .logo-box {
+    margin-left: 5rem;
+  font-size: var(--font-size-sm);
+  
+}
+
+.parallax-img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+  object-position: 30% 50%;
+  top: 67%;
+  z-index: 110;
+}
+.hiking-information {
+  position: relative;
+  margin-top: 1rem;
+  z-index: 500;
+}
+
+.hero {
+  position: relative;
+  height: 98rem;
+}
+
+.search-input {
+    display: none;
+}
+.menu-toggle-icon {
+    width: 14.5rem;
+    font-size: var(--font-size-md);
+    
+}
+.newsletter-post_data .text-bok {
+    width: 135px;
+    transition: 0.5s;
+    justify-content: start;
+}
+.newsletter-post_img {
+    min-width: 6rem;
+}
+
+.newsletter-post_data .myButton {
+  padding: 0 18px;
+  margin-left: 0px;
+}
+#email {
+  margin-right: 1rem;
+  align-items: center;
+}
+
+.wrap {
+  margin-left: 10rem;
+}
+
+.newsletter-post {
+    padding: 2rem;
+}
+.news_text h2{
+  font-size: var(--font-size-sm);
+}
+.news_text{
+  font-size: var(--font-size-sm);
+}
+.logo-box2 {
+  font-size: var(--margin-sm);
+    text-transform: uppercase;
+    color: var(--clr-dark);
+    margin-top: -1rem;
+}
+
+.hero-data {
+    padding-top: 12rem;
+}
+/*footer*/
+.footer-container{
+  grid-template-columns: .75fr 1fr;
+       column-gap: -33.6rem;
+}
+.brand-information{
+  order: 0;
+  max-width: 30rem;
+}
+.footer-nav{
+  margin-bottom: var(--margin-bottom-sm);
+  order: 1;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 6.4rem;
+}
+
+.footer-nav-title{
+  margin-top: var(--margin-bottom-sm);
+}
+.nav-link:last-child{
+  margin-bottom: 0;
+}
+
+.copyright{
+  margin-top: auto;
+  margin-bottom: 0;
+}
+.wrapper {
+  display: inline-block;
+  list-style: none;
+  font-family: var(--font-family);
 }
 }
 @media screen and (min-width: 768px){
@@ -1001,8 +1058,8 @@ img {
   }
   .card-image{
     grid-column: 1/-1;
-    width: 60rem;
-    height: 42rem;
+    width: 100%;
+    height: auto;
     justify-self: center;
   }
   .card-info{
@@ -1035,11 +1092,11 @@ img {
        width: 363px;
     
 }
-/*
-.logo-box {
-    margin-left: 9rem;
-  font-size: var(--font-size-md);
-}*/
+
+
+
+
+
 .menu-toggle-icon {
     width: 14.5rem;
     font-size: 5rem;
@@ -1081,6 +1138,11 @@ img {
 .copyright{
   margin-top: auto;
   margin-bottom: 0;
+}
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  font-family: var(--font-family);
 }
 }
   
