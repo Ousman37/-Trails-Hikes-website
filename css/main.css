@@ -1204,7 +1204,7 @@ html {
   font-size: var(--font-size-sm);
 }
 .logo-box2 {
-  margin-left: 3rem;
+  margin-left: 2rem;
   font-size: var(--font-size-sm);
     text-transform: uppercase;
     color: var(--clr-dark);
@@ -1219,7 +1219,10 @@ html {
   grid-template-columns: .75fr 1fr;
        column-gap: -33.6rem;
 }
-
+.footer-blurb {
+  margin-left: 3rem;
+  
+}
 .footer-nav-group {
   display: block;
   flex-direction: column;
@@ -1236,6 +1239,7 @@ html {
 }
 
 .footer-nav-title{
+  margin-left: 2rem;
   margin-top: var(--margin-bottom-sm);
 }
 .nav-link:last-child{
@@ -1247,10 +1251,12 @@ html {
   margin-bottom: var(--margin-bottom-sm);
 }
 .copyright{
+  margin-left: 3rem;
   margin-top: auto;
   margin-bottom: 0;
 }
 .wrapper_row {
+  margin-left: 4rem;
   display: block;
   list-style: none;
   font-family: var(--font-family);
@@ -1353,6 +1359,7 @@ html {
 .footer-blurb {
   font-size: 1.2rem;
   color: var(--light-clr);
+  margin-left: 3rem;
 }
 
 .hero-data {
@@ -1384,6 +1391,12 @@ html {
 .copyright{
   margin-top: auto;
   margin-bottom: 0;
+}
+.wrapper_row {
+  display: inline-block;
+  list-style: none;
+  font-family: var(--font-family);
+  margin-bottom: 10rem;
 }
 }
 
@@ -1526,8 +1539,6 @@ html {
 }
 
 
-
-
   /*footer*/
 .footer-container{
   grid-template-columns: .75fr 1fr;
@@ -1552,6 +1563,7 @@ html {
 
 .footer-nav-title{
   margin-top: var(--margin-bottom-sm);
+  margin-left: 5rem;
 }
 .nav-link:last-child{
   margin-bottom: 0;
@@ -1564,12 +1576,19 @@ html {
 .copyright{
   margin-top: auto;
   margin-bottom: 0;
+  margin-left: 3rem;
 }
 .wrapper_row {
-  display: inline-flex;
+  display: inline-block;
   list-style: none;
   font-family: var(--font-family);
   margin-bottom: 10rem;
+   margin-left: 4rem;
+}
+.card-description {
+  font-size: var(--font-size-sm);
+  color: white;
+  text-align: center;
 }
 }
 
@@ -1600,8 +1619,6 @@ html {
   object-fit: cover;
   object-position: center;
 }
-
-
 
 
 #email {
@@ -1796,9 +1813,6 @@ html {
     margin-top: 3rem;
 }
 
-
-
-
   /*footer*/
 .footer-container{
   grid-template-columns: .75fr 1fr;
@@ -1809,6 +1823,7 @@ html {
   display: inline-block;
   flex-direction: column;
   margin-bottom: 10rem;
+  margin-left: 8rem;
 }
 .brand-information{
   order: 0;
