@@ -939,6 +939,7 @@ font-size: var(--font-size-sm);
 
 .menu-toggle-icon {
     width: 4rem;
+    margin-left: 13rem;
     font-size: var(--font-size-md);
     }
     .hero-data {
@@ -953,13 +954,6 @@ font-size: var(--font-size-sm);
 .newsletter-post_img {
     min-width: -7rem;
 }
-/*
-.newsletter-post_img {
-    max-width: 21rem;
-    height: 19vh;
-    transform: translateX(-8rem);
-    position: relative;
-}*/
 
 .newsletter-post_data .myButton {
   padding: 0 18px;
