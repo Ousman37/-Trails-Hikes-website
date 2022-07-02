@@ -284,7 +284,7 @@ color: #0b1d26;
   top: 0;
   width: 100%;
   height: 100%;
-  /*background-image: linear-gradient(135deg, rgba(0, 0, 0, 6), transparent 77%);*/
+ 
   z-index: 50;
 }
 
@@ -294,10 +294,17 @@ color: #0b1d26;
   z-index: 100;
 }
 
+
+.hero-container .tagline {
+  color: var(--light-clr);
+
+ 
+}
+
 .tagline {
   display: inline-block;
   font-size: var(--font-size-sm);
-  color: var(--accent-yellow-clr);
+  color: #595959;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 4px;
@@ -636,8 +643,9 @@ label {
 }
 
 .newsletter-post_data .myButton {
-  background-color: var(--accent-yellow-clr);
-  color: var(--light-clr);
+   background-color: #FBD041;
+ color: #2E2E2E;
+  
   padding: 0 10px;
   text-transform: uppercase;
   cursor: pointer;
@@ -758,15 +766,15 @@ label {
   padding-top: 4rem 0 5rem;
 }
 
-.logo-box2{
+.logo-box2 {
   text-transform: uppercase;
-  color: var(--clr-dark);
+  color: var(--accent-yellow-clr);
   margin-top: 5rem;
 }
 
 .person-hiking{
   margin-top: 5rem;
- color: var(--clr-dark);
+ color: var(--accent-yellow-clr);
 }
 .footer-container {
   row-gap: 3.2rem;
@@ -894,8 +902,6 @@ label {
 }
 .logo-box2 {
   font-size: var(--margin-sm);
-    text-transform: uppercase;
-    color: var(--clr-dark);
     margin-top: -1rem;
 }
 
@@ -980,8 +986,6 @@ label {
 }
 .logo-box2 {
   font-size: var(--margin-sm);
-    text-transform: uppercase;
-    color: var(--clr-dark);
     margin-top: -1rem;
 }
 
@@ -1116,8 +1120,6 @@ label {
 }
 .logo-box2 {
   font-size: var(--font-size-sm);
-    text-transform: uppercase;
-    color: var(--clr-dark);
     margin-top: -1rem;
     margin-left: 3rem;
 }
@@ -1272,8 +1274,6 @@ label {
 }
 .logo-box2 {
   font-size: var(--font-size-sm);
-    text-transform: uppercase;
-    color: var(--clr-dark);
     margin-top: -1rem;
     margin-left: 3rem;
 }

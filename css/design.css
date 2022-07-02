@@ -504,8 +504,9 @@ color: #0b1d26;
 }
 
 .newsletter-post_data .myButton {
-  background-color: var(--accent-yellow-clr);
-  color: var(--light-clr);
+background-color: #FBD041;
+color: #2E2E2E;
+
   padding: 0 10px;
   text-transform: uppercase;
   cursor: pointer;
@@ -630,21 +631,23 @@ color: #0b1d26;
  
 }
 
-
 .footer {
   padding-top: 4rem 0 5rem;
 }
 
-.logo-box2{
+.logo-box2 {
   text-transform: uppercase;
-  color: var(--clr-dark);
+  color: var(--accent-yellow-clr);
   margin-top: 5rem;
 }
 
 .person-hiking{
   margin-top: 5rem;
- color: var(--clr-dark);
+ color: var(--accent-yellow-clr);
 }
+
+
+
 .footer-container {
   row-gap: 3.2rem;
 }
@@ -718,6 +721,10 @@ color: #0b1d26;
   color: var(--accent-yellow-clr);
 }
 
+
+/* * ----- !Media */
+
+
 @media screen and (min-width: 280px){
   .logo-box {
     font-size: var(--font-size-sm);
@@ -771,8 +778,6 @@ color: #0b1d26;
 }
 .logo-box2 {
   font-size: var(--margin-sm);
-    text-transform: uppercase;
-    color: var(--clr-dark);
     margin-top: -1rem;
 }
 
@@ -914,8 +919,6 @@ color: #0b1d26;
 }
 .logo-box2 {
   font-size: var(--margin-sm);
-    text-transform: uppercase;
-    color: var(--clr-dark);
     margin-top: -1rem;
 }
 
@@ -1046,8 +1049,6 @@ color: #0b1d26;
 }
 .logo-box2 {
   font-size: var(--margin-sm);
-    text-transform: uppercase;
-    color: var(--clr-dark);
     margin-top: -1rem;
 }
 
@@ -1181,8 +1182,6 @@ color: #0b1d26;
 }
 .logo-box2 {
   font-size: var(--margin-sm);
-    text-transform: uppercase;
-    color: var(--clr-dark);
     margin-top: -1rem;
 }
 
@@ -1222,10 +1221,6 @@ color: #0b1d26;
   font-family: var(--font-family);
 }
 }
-
-
-
-
 
 
 @media screen and (min-width: 768px){
@@ -1291,11 +1286,6 @@ color: #0b1d26;
        width: 363px;
     
 }
-/*
-.logo-box {
-    margin-left: 9rem;
-  font-size: var(--font-size-md);
-}*/
 .menu-toggle-icon {
     width: 14.5rem;
     font-size: 5rem;
@@ -1462,9 +1452,6 @@ padding-top: 87rem;
 }
 
 @media screen and (min-width: 1068px){
-  /*.hero-data{
-    top: 50%;
-  }*/
   .count{
     left: -10rem;
   }

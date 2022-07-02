@@ -662,15 +662,19 @@ align-items: center;
   padding-top: 4rem 0 5rem;
 }
 
-.logo-box2{
+
+
+
+
+.logo-box2 {
   text-transform: uppercase;
-  color: var(--clr-dark);
+  color: var(--accent-yellow-clr);
   margin-top: 5rem;
 }
 
 .person-hiking{
   margin-top: 5rem;
- color: var(--clr-dark);
+ color: var(--accent-yellow-clr);
 }
 .footer-container {
   row-gap: 3.2rem;
@@ -824,7 +828,7 @@ align-items: center;
 .logo-box2 {
   font-size: var(--margin-sm);
     text-transform: uppercase;
-    color: var(--clr-dark);
+   
     margin-top: -1rem;
 }
 
@@ -940,8 +944,6 @@ align-items: center;
 }
 .logo-box2 {
   font-size: var(--margin-sm);
-    text-transform: uppercase;
-    color: var(--clr-dark);
     margin-top: -1rem;
 }
 .parallax-img {
@@ -1086,8 +1088,6 @@ align-items: center;
 }
 .logo-box2 {
   font-size: var(--margin-sm);
-    text-transform: uppercase;
-    color: var(--clr-dark);
     margin-top: -1rem;
 }
 
@@ -1252,11 +1252,6 @@ align-items: center;
        width: 363px;
     
 }
-/*
-.logo-box {
-    margin-left: 9rem;
-  font-size: var(--font-size-md);
-}*/
 .menu-toggle-icon {
     width: 14.5rem;
     font-size: 5rem;
@@ -1380,7 +1375,6 @@ align-items: center;
 }
 /* hero*/
 .hero-data{
-  /*top: 45%;*/
   max-width: 67rem;
   justify-self: center;
 }
@@ -1429,9 +1423,6 @@ padding-top: 89rem;
 }
 
 @media screen and (min-width: 1068px){
-  /*.hero-data{
-    top: 50%;
-  }*/
   .count{
     left: -10rem;
   }
