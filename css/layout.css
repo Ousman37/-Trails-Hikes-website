@@ -663,9 +663,6 @@ align-items: center;
 }
 
 
-
-
-
 .logo-box2 {
   text-transform: uppercase;
   color: var(--accent-yellow-clr);
@@ -1034,11 +1031,11 @@ align-items: center;
 .parallax-img {
   position: absolute;
   left: 0;
-  width: 106%;
-  height: 30%;
+  width: 100%;
+  height: 30vh;
   object-fit: cover;
   object-position: 30% 50%;
-  top: 54%;
+  top: 53%;
   z-index: 110;
 }
 
