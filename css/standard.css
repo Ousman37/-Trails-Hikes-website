@@ -144,14 +144,16 @@ color: #0b1d26;
 .nav li a.active::after,
 .nav li a:hover::after {
   content: "";
-  width: 30%;
+  width: 2%;
   height: 0.125rem;
   background: var(--accent-yellow-clr);
   position: absolute;
-  bottom: -4px;
-  left: 20px;
+   right: -200px;
+  bottom: 37%;
+  left: 1065px;
   
 }
+
 
 .fa-person-hiking{
   color: var(--accent-green-clr);
@@ -285,7 +287,6 @@ color: #0b1d26;
   top: 0;
   width: 100%;
   height: 100%;
-  /*background-image: linear-gradient(135deg, rgba(0, 0, 0, 6), transparent 77%);*/
   z-index: 50;
 }
 
@@ -640,12 +641,6 @@ color: #0b1d26;
   margin-top: 5rem;
  color: var(--accent-yellow-clr);
 }
-
-
-
-
-
-
 
 
 .footer-container {

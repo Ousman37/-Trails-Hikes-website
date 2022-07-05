@@ -145,17 +145,21 @@ color: #0b1d26;
   color: var(--accent-yellow-clr);
 }
 
+
 .nav li a.active::after,
 .nav li a:hover::after {
   content: "";
-  width: 30%;
+  width: 2%;
   height: 0.125rem;
   background: var(--accent-yellow-clr);
   position: absolute;
-  bottom: -4px;
-  left: 20px;
+   right: -800px;
+  bottom: 37%;
+  left: 870px;
   
 }
+
+
 
 .fa-person-hiking{
   color: var(--accent-green-clr);

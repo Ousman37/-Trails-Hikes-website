@@ -52,9 +52,9 @@ html {
 
 body {
   font-family: var(--font-family);
-font-size: var(--font-size-md);
-background-color: var(--accent-green-clr);
-line-height: 3.2rem;
+  font-size: var(--font-size-md);
+   background-color: var(--accent-green-clr);
+   line-height: 3.2rem;
   
 
   
@@ -123,6 +123,7 @@ color: #0b1d26;
   z-index: 999;
 }
 
+
 .nav {
   height: 8rem;
   display: flex;
@@ -146,17 +147,13 @@ color: #0b1d26;
 .nav li a.active::after,
 .nav li a:hover::after {
   content: "";
-  width: 30%;
+  width: 2%;
   height: 0.125rem;
   background: var(--accent-yellow-clr);
   position: absolute;
-  bottom: -4px;
-  left: 20px;
-  
-}
-
-.fa-person-hiking{
-  color: var(--accent-green-clr);
+   right: -990px;
+  bottom: 37%;
+  left: 9000px;
   
 }
 
@@ -165,9 +162,13 @@ color: #0b1d26;
   text-transform: uppercase;
   min-width: 10.8rem;
   color: var(--clr-dark);
-  font-size: var(--margin-bottom-md);
+  font-size: var(--font-size-md);
 }
 
+.fa-person-hiking{
+  color: var(--accent-green-clr);
+  
+}
 .menu-toggle-icon {
   width: 3.5rem;
   height: 3.5rem;
@@ -185,7 +186,7 @@ color: #0b1d26;
   color: #0b1d26;
   display: flex;
   flex-direction: column;
-  gap: var(--margin-sm);
+  gap: var(--gap-md);
 }
 
 .list-link {
@@ -224,7 +225,6 @@ color: #0b1d26;
   padding: 1.5rem;
   transform: translateY(-100%);
   z-index: -1;
-
   transition: transform 0.25s;
 }
 
@@ -239,6 +239,7 @@ color: #0b1d26;
 .nav.active .fa-regular {
   display: block;
 }
+
 
 .header::before {
   content: "";
@@ -262,24 +263,7 @@ color: #0b1d26;
   border-bottom: 1px solid rgb(62, 55, 55);
 }
 
-
-
 /* hero */
-
-.box-container {
-  position: relative;
- width: 50%;
- padding: 0 50px;
-}
-
-.box-container .bg{
-  position: relative;
-height: 20vh;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
 
 .parallax-img {
   position: absolute;
@@ -289,8 +273,28 @@ align-items: center;
   object-fit: cover;
   object-position: 30% 50%;
   top: 55%;
-  /*z-index: 110;*/
+  
 }
+
+/*
+.box-container {
+  position: relative;
+ width: 50%;
+ padding: 0 50px;
+}
+
+
+.box-container .bg{
+  position: relative;
+height: 20vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+*/
+
+
+/*
 .content{
   position: relative;
   display: flex;
@@ -300,13 +304,16 @@ align-items: center;
   flex-direction: column;
 }
 
+
+
+
 .content h2{
   position: relative;
   font-size: var(--margin-bottom-lg);
   color: var(--accent-yellow-clr);
   margin-bottom: 10rem;
   
-}
+}*/
 
 .my-btn{
   display: inline-block;
@@ -324,7 +331,9 @@ align-items: center;
   background-color: var(--accent-green-clr);
 }
 
-
+.wrap{
+  margin-bottom: var(--margin-bottom-lg);
+}
 
 
 .main {
@@ -342,7 +351,6 @@ align-items: center;
   top: 0;
   width: 100%;
   height: 100%;
-  /*background-image: linear-gradient(135deg, rgba(0, 0, 0, 6), transparent 77%);*/
   z-index: 50;
 }
 
@@ -415,7 +423,6 @@ align-items: center;
 .card-image {
   width: 100%;
   height: 80%;
-  
   object-fit: cover;
 }
 
@@ -444,9 +451,9 @@ align-items: center;
   font-size: var(--font-size-sm);
   color: var(--accent-yellow-clr);
 }
-.wrap{
-  margin-bottom: var(--margin-bottom-lg);
-}
+
+
+
 .hiking-information a > #my-button {
   font-family: var(--font-family);
   color: #2E2E2E;
@@ -472,7 +479,7 @@ align-items: center;
   padding: 0 1.5rem;
 }
 .newsletter-post {
-  width: 100%;
+ /* width: 100%;*/
   max-width: 98rem;
   padding: 5rem;
   background-color: var(--accent-green-clr);
