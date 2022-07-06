@@ -1184,10 +1184,12 @@ align-items: center;
   }
 
   /* hero */
-
-  .hero{
-    height: 75vh;
-  }
+.hero {
+  height: 107vh;
+}
+  
+  
+  
   .parallax-img{
     height: auto;
   }
@@ -1389,6 +1391,9 @@ margin-top: 0;
 padding-top: 89rem;
 }
 
+.hero {
+  height: 107vh;
+}
 .card-info {
   text-align: center;
   position: relative;
