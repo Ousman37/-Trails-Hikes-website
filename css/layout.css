@@ -1191,7 +1191,7 @@ align-items: center;
   
   
   .parallax-img{
-    height: auto;
+    height: 40vh;
   }
   /* hiking-information*/
 
@@ -1311,7 +1311,9 @@ align-items: center;
        :root{
   --font-size-xl: 7.5rem
 }
-
+.parallax-img{
+  height: 40vh;
+}
 /*Header*/
 
 .nav-mobile {
@@ -1445,6 +1447,10 @@ padding-top: 89rem;
 .hiking-information {
 margin-top: 0;
 padding-top: 120rem;
+}
+
+.parallax-img{
+  height: 40vh;
 }
 
 }
