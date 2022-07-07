@@ -1233,7 +1233,7 @@ color: #2E2E2E;
   /* hero */
 
   .hero{
-    height: 100vh;
+    height: 124vh;
   }
   .parallax-img{
     height: auto;
@@ -1419,7 +1419,7 @@ color: #2E2E2E;
 /* hiking-information*/
 .hiking-information {
 margin-top: 0;
-padding-top: 87rem;
+padding-top: 22rem;
 }
 
 .card{
