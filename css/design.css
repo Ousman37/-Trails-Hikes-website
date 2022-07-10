@@ -1496,7 +1496,7 @@ color: #2E2E2E;
   /* hero */
 
   .hero{
-    height: 158vh;
+    height: 165vh;
   }
   .parallax-img{
     height: auto;
@@ -1508,7 +1508,14 @@ color: #2E2E2E;
   margin-top: -10rem;
   
 }
-
+.btn {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--font-size-md);
+  font-weight: bold;
+  gap: 2rem;
+  margin-left: 0rem;
+}
   .card{
     grid-template-columns: repeat(2,1fr);
     row-gap: 6.4rem;
