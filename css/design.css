@@ -1612,6 +1612,10 @@ color: #2E2E2E;
        :root{
   --font-size-xl: 7.5rem
 }
+
+.hero-data {
+  padding-top: 17rem;
+}
 /*Header*/
 
 .nav-mobile {
@@ -1730,5 +1734,10 @@ padding-top: 37rem;
   .newsletter-post {
   padding: 11rem;
 }
-
+.hero {
+    height: 184vh;
+}
+.hero-data {
+  padding-top: 17rem;
+}
 }
