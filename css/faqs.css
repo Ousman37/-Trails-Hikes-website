@@ -271,7 +271,8 @@ color: #0b1d26;
 
 }
 .section{
- min-height: 100vh;
+ 
+ min-height: 40vh;
  width: 68%;
  margin: 0 auto;
  /*display: flex;*/
@@ -280,6 +281,7 @@ color: #0b1d26;
  
 }
 .faq{
+   background-color: var(--accent-yellow-clr);
  max-width: 700px;
  margin-top: 2rem;
  padding-bottom: 1rem;
@@ -300,7 +302,8 @@ color: #0b1d26;
 }
 
 .question h3{
- color: #eee;
+  color: #292929;
+ 
  font-size: var(--font-size-md);
  font-family: var(--font-family);
 }
@@ -314,7 +317,8 @@ color: #0b1d26;
  
 }
 .answer p{
- color: #eee;
+  color: #292929;
+ 
  padding-top: 1rem;
  line-height: 1.6;
  font-size: var(--font-size-sm);
